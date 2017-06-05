@@ -47,6 +47,7 @@ const PLAYING_MILLI_SEC = 5000;
 var greetingUrl = null;
 
 function updateAcceleration(a) {
+    //端末の画面を上に向けた水平状態で、x=0,y=0,z=9.81
     document.getElementById('x').innerHTML = roundNumber(a.x);
     document.getElementById('y').innerHTML = roundNumber(a.y);
     document.getElementById('z').innerHTML = roundNumber(a.z);
